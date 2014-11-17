@@ -14,12 +14,12 @@ See: [GitHub.io Pages](https://pages.github.com/)
 
 Technologies Used
 -
->Jekyll - <http://jekyllrb.com/docs/home/>
->Liquid Templates - <https://github.com/Shopify/liquid/wiki>
->SASS - <http://sass-lang.com/documentation/file.SASS_REFERENCE.html>
->JavaScript / jQuery - <http://api.jquery.com/>
->Markdown - <http://daringfireball.net/projects/markdown/syntax>
->YAML - <http://www.yaml.org/>
+- Jekyll - http://jekyllrb.com/docs/home/
+- Liquid Templates - https://github.com/Shopify/liquid/wiki
+- SASS - http://sass-lang.com/documentation/file.SASS_REFERENCE.html
+- JavaScript / jQuery - http://api.jquery.com/
+- Markdown - http://daringfireball.net/projects/markdown/syntax
+- YAML - http://www.yaml.org/
 
 Folder Structure
 -
@@ -58,7 +58,7 @@ Folder Structure
 Events file example
 -
 #### Filename: `2014-11-22.yml`
-```
+```yaml
 date: 2014-11-22 00:00:00 -0800
 title: "Top100 Summit"
 location: "Beijing, China"
@@ -71,7 +71,7 @@ url: "http://www.top100summit.com/"
 News file example
 -
 #### Filename: `2014-11-04.yml`
-```
+```yaml
 date: 2014-11-04 00:00:00 -0800
 headline: "Google unveils its Container Engine to run apps in the best possible way on its cloud"
 author: "Jordan Novet"
