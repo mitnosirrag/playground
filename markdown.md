@@ -1,7 +1,7 @@
 Kubernetes.io Documentation
 =
 
-####Author: Tim Garrison <timg@plexipixel.com>
+####Author: [Tim Garrison](https://github.com/mitnosirrag) \<timg@plexipixel.com\>
 ####Updated: `November 17, 2014`
 
 Overview
