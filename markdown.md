@@ -14,12 +14,12 @@ See: [GitHub.io Pages](https://pages.github.com/)
 
 Technologies Used
 -
-- Jekyll - http://jekyllrb.com/docs/home/
-- Liquid Templates - https://github.com/Shopify/liquid/wiki
-- SASS - http://sass-lang.com/documentation/file.SASS_REFERENCE.html
-- JavaScript / jQuery - http://api.jquery.com/
-- Markdown - http://daringfireball.net/projects/markdown/syntax
-- YAML - http://www.yaml.org/
+- [Jekyll](http://jekyllrb.com/docs/home/) - Framework used to process dynamic files into static website. Automatically run when `push`ing to GitHub. 
+- [Liquid Templates](https://github.com/Shopify/liquid/wiki) - Templating system, similar to Handlebars or Django, used for processing views with minimal logic. Embeds into HTML, similar to PHP.
+- [SASS](http://sass-lang.com/documentation/file.SASS_REFERENCE.html) - Pre-processor for CSS. Allows for re-usable items when styling.
+- JavaScript / [jQuery](http://api.jquery.com/) - jQuery is a JavaScript framework that makes common JS tasks a lot easier.
+- [Markdown](http://daringfireball.net/projects/markdown/syntax) - Markdown can be used to create HTML without knowing HTML, but you have to know Markdown. This document is created in Markdown. Kubernetes.io doesn't really use Markdown, since it wasn't practical.
+- [YAML](http://www.yaml.org/) - Data serialization format that is human-readable. Used for storing all variables and their values. Essentially our model.
 
 Folder Structure
 -
@@ -35,12 +35,12 @@ Folder Structure
 - **`/_data`** - YAML files that populate dynamic sections with content.
 	- **`/events`** - Contains YAML files for individual events. Events follow a simple YAML template structure that uses key/value pairs to set variables that are displayed.  Events, like news, are sorted reverse chronologically, and must be named with their date in `YYYY-MM-DD.yml` format.  Events with duplicate dates that conflict with another file should have a single digit appended to the end of the filename to allow proper sorting.
 	- **/`news`** - Contains YAML files for individual news stories.  News files follow a simple YAML template structure that uses key/value pairs to set variables that are displayed.  News, like events, are sorted reverse chronologically, and must be named with their date in `YYYY-MM-DD.yml` format.  News files with duplicate dates that conflict with another file should have a single digit appended to the end of the filename to allow proper sorting.
-- **`/_includes`** - Generic HTML includes for all pages.
+- **`/_includes`** - Generic HTML/Liquid includes for all pages.
 	- **`head.html`** - HTML declaration, meta tags, style tags and script tags. This file is included in all layouts.
 	- **`header.html`** - Included in the *`head.html`* include, this file displays the navigation for both desktop and mobile.
 	- **`hero.html`** - Included in the *`header.html`* include, this file displays the hero section of each interior page and the home page.
 	- **`footer.html`** - This file in included in all layouts.  It displays all footer information.
-- **`/_layouts`** - HTML markup templates.
+- **`/_layouts`** - HTML/Liquid markup templates.
 	- **`community.html`** - HTML markup for community page.
 	- **`default.html`** - All layouts inherit this layout to simplify includes. 
 	- **`events.html`** - HTML markup for events page.
